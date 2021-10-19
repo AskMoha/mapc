@@ -16,7 +16,16 @@ public class Burger implements Product {
     public double weight() {
         return items.stream().map(Product::weight).reduce(0.0, Double::sum);
     }
-
+    @Override
+    public double calories()
+    {
+        return items.stream().map(Product::calories).reduce(0.0,Dézaaaaaaaaaaaaaaaouble::sum);
+    }
+    @Override
+    public double calories_per_100g()
+    {
+        return calories()/weight()*100;
+    }
     @Override
     public double price() {
         return items.stream().map(Product::price).reduce(0.0, Double::sum);

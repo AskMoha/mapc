@@ -28,7 +28,15 @@ public class Sauce implements Product {
     public double weight() {
         return weight;
     }
-
+    @Override
+    public double calories_per_100g()
+    {
+        double rtr=0;
+        switch(this)
+        {
+            case:barbecue
+        }
+    }
     @Override
     public String toString() {
         return String.format("%s sauce (%.0fg) -- %.2f€", type, weight(), price());
