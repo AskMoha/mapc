@@ -1,7 +1,7 @@
 package td3.Visitable;
 import td3.Visitor.*;
 
-public class Ligne {
+public class Ligne implements Visitable,PrePostVisitable {
     private String name;
     private int sum;
     public Ligne(String name,int sum)
