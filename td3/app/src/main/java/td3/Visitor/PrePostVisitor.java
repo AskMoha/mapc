@@ -1,5 +1,7 @@
 package td3.Visitor;
 
+import td3.Visitable.*;
+
 public interface PrePostVisitor extends AbstractVisitor{
     public void preVisit(GroupeClient groupeClient);
     public void preVisit(Client client);

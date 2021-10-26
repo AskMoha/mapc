@@ -1,4 +1,6 @@
+
 package td3.Visitor;
+import td3.Visitable.*;
 
 public class XMLRapportCommandes extends PrePostVisitor{
     @Override
